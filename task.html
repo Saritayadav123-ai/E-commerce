@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <form id="loginForm">
+            <fieldset>
+                <legend>login</legend>
+                <label for="userName">username</label><input type="tex" id="userName" required><br><br>
+                <label for="password">Password</label><input type="password" id="pwd" required><br><br>
+            <button type="submit">submit</button>
+        </fieldset>
+        </form>
+
+    <script>
+        let uname='sarita'
+        let pwd='yadav'
+        let SignForm=document.getElementById("loginForm")
+        let userName=document.getElementById("userName")
+        let errorUnMsg =document.getElementById("errorUnMsg")
+        let pwd = document.getElementById("pwd")
+        let errorpwdMsg =document.getElementById("errorpwdMsg")
+        
+        userName.addEventListener("submit",()=>{
+            if(userName.value == ""){
+                errorUnMsg.textContent="sarita"
+                
+                
+            }
+            else{
+                errorUnMsg.textContent=""
+            }
+        })
+        
+        
+        let userData ={
+            un:" ",
+            pwd:" "
+        }
+        loginForm.addEventListener("submit",(e)=>{
+            e.preventDefault();
+           let userName =userName.value;
+           let pass=pwd.value;
+           userData.un=userName;
+           userData.pwd=pass
+           console.log(userData)
+        })
+       
+    </script>
+</body>
+</html>

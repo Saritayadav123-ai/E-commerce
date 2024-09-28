@@ -1,0 +1,26 @@
+.all-product{
+      height: 60px;
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border: 2px solid black;
+      border-radius: 10px;
+      margin: auto;
+      box-shadow: 2px,3px,4px;
+      background-color: orange;
+
+}
+.all_product img{
+    height: 50px;
+    width: 100px;
+}
+button{
+    color: white;
+    background-color: red;
+    margin-right: 10px;
+}
+  img{
+    height: 200px;
+    width: 200px;
+} 
